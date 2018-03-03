@@ -6,19 +6,23 @@
   </head>
   <body>
 	<header class="main-header">
-      <nav class="main-navigation">
-       <a class="main-header-logo" href="#">Логотип</a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotel.html">Гостиницы</a></li>	
-    	</ul>
-      </nav>  		
-    </header>
+       <div class="main-header-inner">
+         <a class="main-header-logo" href="index.html">
+  		     <img src="#" alt="Логотип">
+		 </a>
+         <nav class="main-navigation">
+           <ul class="site-navigation">
+             <li><a href="#">Информация</a></li>
+             <li><a href="#">Фото и видео</a></li>
+             <li><a href="#">Карта штата</a></li>
+             <li><a href="#">Гостиницы</a></li>	
+    	   </ul>
+         </nav>
+       </div>    		
+	</header>
     <main class="conteiner">
       <form action="https://echo.htmlacademy.ru" method="get">
-        <div>
+        <div class="box1-inner">
           <fieldset>
              <legend>Инфраструктура</legend>   
              <label><input type="checkbox" name="pool" checked> Бассейн </label>
@@ -37,69 +41,87 @@
              <input type="button" value="Показать">
           </fieldset>
         </div>
-        <div>
+        <div class="box2-inner">
           <fieldset> 
-            <label>
-  		    Найдено:
-  		    <input type="number" name="numbers" value="3">
-  		    </label>
-            <label>
-            Сортировка:
-            <label>
-            <input type="radio" name="sort" value="по цене">
-            По цене </label>
-            <label>
-            <input type="radio" name="sort" value="по типу">
-            По типу </label>
-            <label>
-            <input type="radio" name="sort" value="по рейтингу">
-            По рейтингу </label>
+            <p>Найдено: <span>3</span>
+  		    <label>
+              Сортировка:
+			  <a href="#">По цене </a>
+              <a href="#">По типу </a>
+              <a href="#">По рейтингу </a>
+            </label>
+            </p>
           </fieldset>
-        </div>
-        
+		</div> 
       </form>
       <section class="hotel">
         <ul class="hotel-list">
           <li class="hotel-item">
-          <img src="img1.jpg" width="" height="" alt="Amara">
-          <h2>Amara Resort &amp; Spa</h2> 
-          <p>Гостиница от 4000 Р.</p>
-          <a class="button" href="">Подробнее</a>
-          <a class="button-2" href="">Забронировать</a>
-          <span>Рейтинг: 8,5</span>
+            <div class="hotel1-inner">
+              <div class="jpg"> 
+                <img src="img1.jpg" width="" height="" alt="Amara">
+              </div>
+              <div class="text">  
+                <h2>Amara Resort &amp; Spa</h2> 
+                <p>Гостиница от 4000 Р.</p>
+                <a class="button" href="">Подробнее</a>
+                <a class="button-2" href="">Забронировать</a>
+              </div>
+                <div class="rating">  
+                  <p>Рейтинг: <span>8,5</span></p>
+                </div>  
+            </div>  
           </li>
           <li class="hotel-item">
-          <img src="img2.jpg" width="" height="" alt="Desert">
-          <h2>Desert Quail Inn</h2> 
-          <p>Мотель от 3000 Р.</p>
-          <a class="button" href="">Подробнее</a>
-          <a class="button-2" href="">Забронировать</a>
-          <span>Рейтинг: 8,9</span>
+            <div class="hotel2-inner">
+              <div class="jpg"> 
+                <img src="img2.jpg" width="" height="" alt="Desert">
+              </div>  
+              <div class="text">
+                <h2>Desert Quail Inn</h2> 
+                <p>Мотель от 3000 Р.</p>
+                <a class="button" href="">Подробнее</a>
+                <a class="button-2" href="">Забронировать</a>
+              </div>
+              <div class="rating">   
+                <p>Рейтинг: <span>8,9</span></p>
+              </div>  
+            </div>  
           </li>
           <li class="hotel-item">
-          <img src="img3.jpg" width="" height="" alt="Villas">
-          <h2>Villas at Poco Diablo</h2> 
-          <p>Апартаменты от 2000 Р.</p>
-          <a class="button" href="">Подробнее</a>
-          <a class="button-2" href="">Забронировать</a>
-          <span>Рейтинг: 8,9</span>
+            <div class="hotel3-inner">
+              <div class="jpg"> 
+                <img src="img3.jpg" width="" height="" alt="Villas">
+              </div>
+              <div class="text">  
+                <h2>Villas at Poco Diablo</h2> 
+                <p>Апартаменты от 2000 Р.</p>
+                <a class="button" href="">Подробнее</a>
+                <a class="button-2" href="">Забронировать</a>
+              </div>
+              <div class="rating">  
+                <p>Рейтинг: <span>8,9</span></p>
+              </div>  
+			</div>  
           </li>
         </ul>  
       </section>
     </main>
     <footer class="main-footer">
-      <p><a href="1.html">#VISITSEDONA</a></p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>	
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
-        </ul>
-      </div>   
-      <p class="footer-copyright">
-        WEBSITE BY
-        <a class="button" href="https://htmlacademy.ru">Html Academy</a>
-      </p>
+      <div class="main-footer-inner"> 
+        <p>#VISITSEDONA</p>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Twitter</a></li>	
+            <li><a class="social-button" href="#">Facebook</a></li>
+            <li><a class="social-button" href="#">Youtube</a></li>
+          </ul>
+        </div>   
+        <p class="footer-copyright">
+          WEBSITE BY
+          <a href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+		</p>
+      </div>
     </footer>       	
   </body>
 </html>
