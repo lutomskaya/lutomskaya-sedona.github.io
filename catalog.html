@@ -7,7 +7,7 @@
   <body>
 	<header class="main-header">
       <nav class="main-navigation">
-       <img src="img/index-logo.svg" width="" height="" alt="Логотип">
+       <a class="main-header-logo" href="#">Логотип</a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
@@ -21,22 +21,40 @@
         <div>
           <fieldset>
              <legend>Инфраструктура</legend>   
-             <label><input type="checkbox" checked> Бассейн </label><br>
-             <label><input type="checkbox"> Парковка </label><br>
-             <label><input type="checkbox"> WI-FI </label>
+             <label><input type="checkbox" name="pool" checked> Бассейн </label>
+             <label><input type="checkbox" name="parking"> Парковка </label>
+             <label><input type="checkbox" name="wi-fi"> WI-FI </label>
           </fieldset>
           <fieldset>
              <legend>Тип жилья:</legend>   
-             <label><input type="checkbox" checked> Гостиница </label><br>
-             <label><input type="checkbox" checked> Мотель </label><br>
-             <label><input type="checkbox" checked> Апартаменты </label>
+             <label><input type="checkbox" name="hotel" checked> Гостиница </label>
+             <label><input type="checkbox" name="motel" checked> Мотель </label>
+             <label><input type="checkbox" name="apartments" checked> Апартаменты </label>
           </fieldset>
           <fieldset>
-             <legend>Стоимость в сутки (Р):</legend>   
-             <input type="range" min="1" max="10">
+             <p><legend>Стоимость в сутки (Р):</legend>   
+             <input type="range" min="1" max="10"></p>
+             <input type="button" value="Показать">
           </fieldset>
         </div>
         <div>
+          <fieldset> 
+            <label>
+  		    Найдено:
+  		    <input type="number" name="numbers" value="3">
+  		    </label>
+            <label>
+            Сортировка:
+            <label>
+            <input type="radio" name="sort" value="по цене">
+            По цене </label>
+            <label>
+            <input type="radio" name="sort" value="по типу">
+            По типу </label>
+            <label>
+            <input type="radio" name="sort" value="по рейтингу">
+            По рейтингу </label>
+          </fieldset>
         </div>
         
       </form>
