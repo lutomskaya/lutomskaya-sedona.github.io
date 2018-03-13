@@ -1,12 +1,19 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-size: 14px;
-	line-height: 21px;
-	text-transform: uppercase;
-	color: 333333;
-	background-color: white;
-	
+  margin: 0;
+  padding: 0;
+  
+  font-family: "PT Sans", Arial, sans-serif;	
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;	
+  color: #000000;
+  text-transform: uppercase;
+  
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -18,4 +25,357 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.main-header {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: rgba(40, 40, 40, 0.3);
+}
+
+/*Главная*/
+
+.picture {
+  height: 550px;
+  background-color: #ffffff;
+  background-image: url("../img/Welcome.png"), url("../img/Фон.jpg");
+  background-size: auto cover;
+  background-position:  center;
+  background-repeat: no-repeat;
+}
+
+.slogan {
+  text-align: center;	
+}
+
+.slogan h2 {
+  font-size: 21px;
+  line-height: 26px;	
+}
+
+.slogan p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;	
+  color: #333333;
+  	
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item,
+.aspect-item {
+  text-align: center;
+}
+
+.aspect-item_gray {
+  background-color: #eeeeee;
+}
+
+.feature-item_white h3,
+.feature-item_blue h3,
+.aspect-item_gray h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.feature-item_white p,
+.feature-item_blue p,
+.aspect-item_gray p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal; 
+}
+
+.feature-item_blue {
+  color: #ffffff;
+  background-color: #81b3d2; 	
+}
+
+.feature-item_white p,
+.aspect-item_gray p {
+  color: #333333;
+}
+.icon_1 {
+  background-image: url(../img/icon-1.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.icon_2 {
+  background-image: url(../img/icon-2.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.icon_3 {
+  background-image: url(../img/icon-3.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.interest {
+  text-align: center;	
+}
+
+.interest h2 {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.interest p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #333333;  
+}
+
+.interest a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;	
+}
+
+.interest a:hover {
+  color: #ffffff;
+  background-color: #604e43;	
+}
+
+.interest a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;	
+}
+
+.interest label  {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+	
+}
+.interest input {   
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+.interest input:hover {
+  background-color: #ebebeb;
+}
+
+.interest input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;	
+}
+
+.interest button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.interest button:hover {
+  color: #ffffff;
+  background-color: #669ec0;	
+}
+
+.interest button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;	
+}
+
+/*Главная*/
+
+/*Отели*/
+
+legend {
+  font-size: 16px;
+  font-weight: bold;
+	
+} 
+
+.box1-inner {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #ffffff;
+  background-image: url("../img/Фон.jpg");
+  background-position: left;
+  background-size: cover;	
+  background-repeat: no-repeat;
+  /*-webkit-filter: blur(5px);*/
+}
+
+.box1-inner button {
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+}
+
+.box2-inner {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.box2-inner p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.box2-inner a {
+  text-decoration: underline;
+  color: rgba(40, 40, 40, 0.3);
+}
+
+.box2-inner a:hover {
+  color: #81b3d2;
+}
+
+.box2-inner a:active {
+  color: #000000;
+}
+
+.hotel h3 {
+  font-size: 21px;
+  line-height: 26px;	
+}
+.hotel p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.rating p {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-2 {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #669ec0;	
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;	
+}
+
+.button-2:hover {
+  color: #ffffff;
+  background-color: #604e43;	
+}
+
+.button-2:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;	
+}
+/*Отели*/
+
+.main-footer p {
+  font-size: 21px;
+	
+}
+.footer-social ul{
+  list-style: none;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.social-button1 {
+  background-image: url("../img/t.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-button2 {
+  background-image: url("../img/fb-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-button3 {
+  background-image: url("../img/youtube.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.footer-social a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+	
+}
+.footer-copyright a:hover {
+  color: #81b3d2;	
+}
+
+.footer-copyright a:active {
+  color: rgba(40, 40, 40, 0.3);	
 }

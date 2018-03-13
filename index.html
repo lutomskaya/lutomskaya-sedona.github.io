@@ -3,28 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">  
+    <link href="css/style.css" rel="stylesheet">  
   </head>
   <body>
-	<header class="main-header">
-       <div class="main-header-inner container">
-         <a class="main-header-logo" href="#">
-  		     <img src="img/logo.png" width="138" height="70" alt="Логотип">
-		 </a>
-         <nav class="main-navigation">
-           <ul class="site-navigation">
-             <li><a href="#">Информация</a></li>
-             <li><a href="#">Фото и видео</a></li>
-             <li><a href="#">Карта штата</a></li>
-             <li><a href="catalog.html">Гостиницы</a></li>	
-    	   </ul>
-         </nav>
-       </div>    		
-	  </header>
+    <header class="main-header">
+      <div class="main-header-inner container">
+        <a class="main-header-logo" href="#">
+  		  <img src="img/logo.png" width="138" height="70" alt="Логотип">
+		</a>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>	
+    	  </ul>
+        </nav>
+      </div>    		
+	</header>
     <main class="holder">
       <section class="picture">
         <div class="picture-inner container"> 
-          <h1>SEDONA</h1>
+          <h1 class="visually-hidden">SEDONA</h1>
         </div>  	
       </section>
       <section class="slogan">  
@@ -43,15 +45,15 @@
 		      <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>      
               <img src="img/img4.jpg" width="512" height="256" alt="Фото">
             </li>
-            <li class="feature-item feature-item_white">
+            <li class="feature-item feature-item_white icon_1">
               <h3>Жилье</h3> 
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p> 
             </li>  
-            <li class="feature-item feature-item_white">
+            <li class="feature-item feature-item_white icon_2">
               <h3>Еда</h3> 
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>  
-            <li class="feature-item feature-item_white">
+            <li class="feature-item feature-item_white icon_3">
               <h3>Сувениры</h3> 
               <p>Не только китайского, но и местного производства!</p>
             </li>
@@ -83,7 +85,7 @@
         <div class="interest-inner container">
           <h2>Заинтересовались?</h2>
           <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p> 
-          <a href="#"><h2>Поиск гостиницы в Седоне</h2></a>
+          <a href="#">Поиск гостиницы в Седоне</a>
           <form action="https://echo.htmlacademy.ru" method="get">
   		    <p><label>
   		    Дата заезда:
@@ -117,9 +119,9 @@
         <p>#VISITSEDONA</p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Twitter</a></li>	
-            <li><a class="social-button" href="#">Facebook</a></li>
-            <li><a class="social-button" href="#">Youtube</a></li>
+            <li><a class="social button social-button1" href="#" aria-label="Twitter"></a></li>	
+            <li><a class="social button social-button2" href="#" aria-label="Facebook"></a></li>
+            <li><a class="social button social-button3" href="#" aria-label="Youtube"></a></li>
           </ul>
         </div>   
         <p class="footer-copyright">
