@@ -26,20 +26,20 @@
         <div class="box1-inner container">
           <fieldset>
              <legend>Инфраструктура</legend>   
-             <label><input type="checkbox" name="pool" checked> Бассейн </label>
-             <label><input type="checkbox" name="parking"> Парковка </label>
-             <label><input type="checkbox" name="wi-fi"> WI-FI </label>
+             <label><input type="checkbox" name="filter-infrastructure-pool" value="filter-infrastructure-pool" checked> Бассейн </label>
+             <label><input type="checkbox" name="filter-infrastructure-parking" value="filter-infrastructure-parking"> Парковка </label>
+             <label><input type="checkbox" name="filter-infrastructure-wi-fi" value="filter-infrastructure-wi-fi"> WI-FI </label>
           </fieldset>
           <fieldset>
              <legend>Тип жилья:</legend>   
-             <label><input type="checkbox" name="hotel" checked> Гостиница </label>
-             <label><input type="checkbox" name="motel" checked> Мотель </label>
-             <label><input type="checkbox" name="apartments" checked> Апартаменты </label>
+             <label><input type="checkbox" name="type-accommodation-hotel" value="type-accommodation-hotel" checked> Гостиница </label>
+             <label><input type="checkbox" name="type-accommodation-motel" value="type-accommodation-motel" checked> Мотель </label>
+             <label><input type="checkbox" name="type-accommodation-apartments" value="type-accommodation-apartments" checked> Апартаменты </label>
           </fieldset>
           <fieldset>
              <legend>Стоимость в сутки (Р):</legend>   
-             <input type="range" min="1" max="10">
-             <button type="submit" value="Показать">Показать </button>
+             <input type="range" name="cost" value="3" min="1" max="10" step="1">
+             <button type="submit" name="show" value="show">Показать </button>
           </fieldset>
         </div>
       </form>  
