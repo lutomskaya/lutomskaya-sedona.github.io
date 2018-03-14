@@ -8,12 +8,35 @@ body {
   font-weight: bold;	
   color: #000000;
   text-transform: uppercase;
-  
+ 
   background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  font-weight: normal;
+  color: #333333;
+  text-align: center;
+}
+
+h3 {
+  font-size: 21px;	
+  line-height: 21px;
+  text-align: center;	
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+button {  
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -26,10 +49,7 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.main-header {
-  font-size: 14px;
-  line-height: 21px;
-}
+
 
 .site-navigation {
   list-style: none;
@@ -39,7 +59,8 @@ a {
   color: #000000;
 }
 
-.main-navigation a:hover {
+.main-navigation a:hover,
+.main-navigation a:focus {
   color: #81b3d2;
 }
 
@@ -47,60 +68,24 @@ a {
   color: rgba(40, 40, 40, 0.3);
 }
 
+
 /*Главная*/
 
 .picture {
-  height: 550px;
+  height: 500px;
   background-color: #ffffff;
-  background-image: url("../img/Welcome.png"), url("../img/Фон.jpg");
-  background-size: auto cover;
-  background-position:  center;
+  background-image: url("../img/Welcome.png"), url("../img/white.png"), url("../img/Фон.jpg");
+  background-size: auto auto cover;
+  background-position:  bottom center;
   background-repeat: no-repeat;
 }
 
-.slogan {
-  text-align: center;	
-}
-
-.slogan h2 {
-  font-size: 21px;
-  line-height: 26px;	
-}
-
 .slogan p {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;	
-  color: #333333;
-  	
+  line-height: 26px;	
 }
 
 .features-list {
   list-style: none;
-}
-
-.feature-item,
-.aspect-item {
-  text-align: center;
-}
-
-.aspect-item_gray {
-  background-color: #eeeeee;
-}
-
-.feature-item_white h3,
-.feature-item_blue h3,
-.aspect-item_gray h3 {
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.feature-item_white p,
-.feature-item_blue p,
-.aspect-item_gray p {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal; 
 }
 
 .feature-item_blue {
@@ -108,30 +93,30 @@ a {
   background-color: #81b3d2; 	
 }
 
-.feature-item_white p,
-.aspect-item_gray p {
-  color: #333333;
-}
-.icon_1 {
+.icon-1 {
   background-image: url(../img/icon-1.svg);
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.icon_2 {
+.icon-2 {
   background-image: url(../img/icon-2.svg);
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.icon_3 {
+.icon-3 {
   background-image: url(../img/icon-3.svg);
   background-position: top center;
   background-repeat: no-repeat;
 }
 
+.aspect-item_gray {
+  background-color: #eeeeee;
+}
+
 .interest {
-  text-align: center;	
+  text-align: center;
 }
 
 .interest h2 {
@@ -140,20 +125,18 @@ a {
 }
 
 .interest p {
-  font-size: 14px;
   line-height: 24px;
-  font-weight: normal;
-  color: #333333;  
 }
 
 .interest a {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  background-color: #766357;	
+  background-color: #766357;
 }
 
-.interest a:hover {
+.interest a:hover,
+.interest a:focus {
   color: #ffffff;
   background-color: #604e43;	
 }
@@ -177,7 +160,8 @@ a {
   background-color: #f2f2f2;
 }
 
-.interest input:hover {
+.interest input:hover,
+.interest input:focus {
   background-color: #ebebeb;
 }
 
@@ -188,17 +172,15 @@ a {
 
 .interest button {
   font: inherit;
-
-  text-align: center;
+  
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
-
   background-color: #81b3d2;
   border: none;
 }
 
-.interest button:hover {
+.interest button:hover,
+.interest button: {
   color: #ffffff;
   background-color: #669ec0;	
 }
@@ -219,8 +201,6 @@ legend {
 } 
 
 .box1-inner {
-  font-size: 14px;
-  line-height: 21px;
   font-weight: normal;
   color: #ffffff;
   background-image: url("../img/Фон.jpg");
@@ -245,7 +225,7 @@ legend {
 .box2-inner p {
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
+  
 }
 
 .box2-inner a {
@@ -253,7 +233,8 @@ legend {
   color: rgba(40, 40, 40, 0.3);
 }
 
-.box2-inner a:hover {
+.box2-inner a:hover,
+.box2-inner a:focus {
   color: #81b3d2;
 }
 
@@ -262,12 +243,9 @@ legend {
 }
 
 .hotel h3 {
-  font-size: 21px;
   line-height: 26px;	
 }
 .hotel p {
-  font-size: 14px;
-  line-height: 21px;
   font-weight: normal;
   color: #333333;
 }
@@ -301,7 +279,8 @@ legend {
   border: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   color: #ffffff;
   background-color: #669ec0;	
 }
@@ -311,7 +290,8 @@ legend {
   background-color: #5496bd;	
 }
 
-.button-2:hover {
+.button-2:hover,
+.button-2:focus {
   color: #ffffff;
   background-color: #604e43;	
 }
@@ -337,26 +317,27 @@ legend {
   color: #ffffff;
   background-color: #81b3d2;
 }
-
-.social-button1 {
+/*
+ {
   background-image: url("../img/t.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.social-button2 {
+ {
   background-image: url("../img/fb-icon.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.social-button3 {
+ {
   background-image: url("../img/youtube.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.footer-social a:hover {
+*/
+.footer-social a:hover,
+.footer-social a:focus {
   color: #ffffff;
   background-color: #669ec0;
 }
@@ -367,12 +348,11 @@ legend {
 }
 
 .footer-copyright {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
-	
+  line-height: 26px;  
 }
-.footer-copyright a:hover {
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
   color: #81b3d2;	
 }
 
