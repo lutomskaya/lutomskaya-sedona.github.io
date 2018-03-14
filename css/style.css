@@ -306,44 +306,31 @@ legend {
   font-size: 21px;
 	
 }
+
+
 .footer-social ul{
   list-style: none;
 }
 
 .footer-social a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
   color: #ffffff;
   background-color: #81b3d2;
 }
-/*
- {
-  background-image: url("../img/t.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
- {
-  background-image: url("../img/fb-icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
- {
-  background-image: url("../img/youtube.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-*/
 .footer-social a:hover,
 .footer-social a:focus {
   color: #ffffff;
   background-color: #669ec0;
 }
 
-.footer-social a:active {
-  color: rgba(255, 255, 255, 0.3);
+.social-button:active path {
+  fill: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -358,4 +345,13 @@ legend {
 
 .footer-copyright a:active {
   color: rgba(40, 40, 40, 0.3);	
+}
+
+.logo:hover path,
+.logo:focus path {
+  fill: #81b3d2;
+}
+
+.logo:active path {
+  fill: rgba(40, 40, 40, 0.3);
 }
