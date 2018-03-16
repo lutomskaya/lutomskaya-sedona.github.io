@@ -74,9 +74,9 @@ button {
 .picture {
   height: 500px;
   background-color: #ffffff;
-  background-image: url("../img/Welcome.png"), url("../img/white.png"), url("../img/Фон.jpg");
-  background-size: auto auto cover;
-  background-position:  bottom center;
+  background-image: url("../img/Фон.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -92,7 +92,7 @@ button {
   color: #ffffff;
   background-color: #81b3d2; 	
 }
-
+/*
 .icon-1 {
   background-image: url(../img/icon-1.svg);
   background-position: top center;
@@ -110,7 +110,7 @@ button {
   background-position: top center;
   background-repeat: no-repeat;
 }
-
+*/
 .aspect-item_gray {
   background-color: #eeeeee;
 }
@@ -304,6 +304,7 @@ legend {
 
 .main-footer p {
   font-size: 21px;
+  font-weight: bold;
 	
 }
 
