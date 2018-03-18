@@ -1,6 +1,8 @@
 body {
+  
   margin: 0;
   padding: 0;
+  
   
   font-family: "PT Sans", Arial, sans-serif;	
   font-size: 14px;
@@ -50,7 +52,11 @@ button {
   overflow: hidden;
 }
 
-
+.container {
+	width: 1200px;
+	margin: 0 auto;
+    padding: 0 10px;
+}
 .site-navigation {
   list-style: none;
 }
@@ -68,21 +74,107 @@ button {
   color: rgba(40, 40, 40, 0.3);
 }
 
+.main-header {
+  
+  min-height: 57px;
+  padding: 0;
+  
+  
+  
+}
+.main-header-logo {
+  position: absolute;
+  left: 600px;
+  
+}
+
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+  margin: 0;
+  
+  
+  
+}
+.site-navigation li {
+  width: 240px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 380px;
+}
 
 /*Главная*/
+.column-inner {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 50px;	
+}
 
 .picture {
-  height: 500px;
+  
   background-color: #ffffff;
   background-image: url("../img/Фон.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  
+    
 }
-
+.slogan {
+  margin-top: 60px;
+  
+}
 .slogan p {
   line-height: 26px;	
 }
+.features {
+  margin-bottom: 55px;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-item_blue {
+  display: flex;
+}
+
+.feature-item:nth-child(5) {
+  flex-direction: row-reverse;
+}
+
+.feature-item-block {
+  width: 280px;
+  margin: 0;
+  padding-top: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
+ 
+}
+
+.feature-item-image {
+  width: 800px;
+}
+
+.feature-item_white {
+  width: 260px;
+  min-height: 207px;
+  padding-top: 160px;
+  padding-left: 70px;
+  padding-right: 70px;
+  
+}
+
+
+.feature-item_blue p {
+  color: #ffffff;
+}
+
 
 .features-list {
   list-style: none;
@@ -92,31 +184,42 @@ button {
   color: #ffffff;
   background-color: #81b3d2; 	
 }
-/*
-.icon-1 {
+
+.feature-item:nth-child(2) {
   background-image: url(../img/icon-1.svg);
-  background-position: top center;
+  background-position: 160px 60px;
   background-repeat: no-repeat;
 }
 
-.icon-2 {
+.feature-item:nth-child(3) {
   background-image: url(../img/icon-2.svg);
-  background-position: top center;
+  background-position: 160px 60px;
   background-repeat: no-repeat;
 }
 
-.icon-3 {
+.feature-item:nth-child(4) {
   background-image: url(../img/icon-3.svg);
-  background-position: top center;
+  background-position: 160px 60px;
   background-repeat: no-repeat;
 }
-*/
+
 .aspect-item_gray {
   background-color: #eeeeee;
+}
+.aspect-item {
+  width: 220px;
+  min-height: 205px;
+  padding-top: 50px;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
 .interest {
   text-align: center;
+}
+
+.interest-inner {
+  width: 600px;
 }
 
 .interest h2 {
@@ -190,6 +293,8 @@ button {
   background-color: #5496bd;	
 }
 
+
+
 /*Главная*/
 
 /*Отели*/
@@ -201,6 +306,9 @@ legend {
 } 
 
 .box1-inner {
+  display: flex;
+  min-height: 185px;
+  padding-top: 35px;
   font-weight: normal;
   color: #ffffff;
   background-image: url("../img/Фон.jpg");
@@ -210,6 +318,22 @@ legend {
   /*-webkit-filter: blur(5px);*/
 }
 
+.box1-inner fieldset:nth-child(1) {
+  width: 300px;
+}
+
+.box1-inner fieldset:nth-child(2) {
+  width: 500px;
+}
+
+.box1-inner fieldset:nth-child(3) {
+  width: 400px;
+}
+
+fieldset {
+  display: flex;
+  
+}
 .box1-inner button {
   font: inherit;
   color: inherit;
@@ -218,6 +342,8 @@ legend {
 }
 
 .box2-inner {
+  display: flex;
+  min-height: 90px;
   font-size: 21px;
   line-height: 26px;
 }
@@ -240,6 +366,29 @@ legend {
 
 .box2-inner a:active {
   color: #000000;
+}
+.hotel {
+  margin: 0;
+  padding: 30px 70px;
+}
+.hotel-inner {
+  display: flex;
+  
+  
+	
+  
+}
+.hotel-list {
+  list-style: none;
+  
+}
+
+.text {
+  padding-left: 30px;
+}
+.rating {
+  padding-left: 540px;
+	
 }
 
 .hotel h3 {
@@ -301,6 +450,11 @@ legend {
   background-color: #503e33;	
 }
 /*Отели*/
+.main-footer .container {
+  display: flex; 
+  margin: 0 auto;
+  padding-top: 40px;
+}
 
 .main-footer p {
   font-size: 21px;
@@ -308,13 +462,23 @@ legend {
 	
 }
 
+.link-inner {
+  width: 240px;
+  padding-left: 50px;
+}
+
+.footer-social {
+  width: 200px;
+  padding-left: 200px;
+}
 
 .footer-social ul{
+  display: flex;
   list-style: none;
 }
 
 .footer-social a {
-  margin-left: 20px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,7 +500,10 @@ legend {
 }
 
 .footer-copyright {
-  line-height: 26px;  
+  width: 240px;
+  line-height: 26px; 
+  padding-left: 200px;
+  padding-right: 70px;
 }
 
 .footer-copyright a:hover,
