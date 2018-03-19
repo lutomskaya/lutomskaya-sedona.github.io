@@ -162,7 +162,7 @@ button {
 }
 
 .feature-item-block {
-  width: 305px;
+  width: 33%;
   margin: 0;
   padding: 50px;
   
@@ -251,13 +251,18 @@ button {
 }
 
 .interest a {
-  
+  display: inline-block;
+  width: 600px;
+  min-height: 60px;
+  padding-top: 30px;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
   background-color: #766357;
 }
-
+.interest-form {
+  padding: 50px;
+}
 .interest-form input[type="text"],
 .interest-form input[type="number"] {
   box-sizing: border-box;
@@ -427,7 +432,7 @@ fieldset {
 .text {
   margin-right: auto;
   margin-left: 30px;
-  align-self: flex-start;
+  
   
 }
 
@@ -435,8 +440,6 @@ fieldset {
   list-style: none;
   
 }
-
-
 
 .hotel h3 {
   line-height: 26px;	
@@ -449,6 +452,12 @@ fieldset {
 .rating p {
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.hotel-jpg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
