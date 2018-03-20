@@ -39,9 +39,19 @@
              <label><input type="checkbox" name="type-accommodation-apartments" value="type-accommodation-apartments" checked> Апартаменты </label>
           </fieldset>
           <fieldset>
-             <legend>Стоимость в сутки (Р):</legend>   
-             <input type="range" name="cost" value="3" min="1" max="10" step="1">
-             <button type="submit" name="show" value="show">Показать </button>
+             <legend class="filter-range">Стоимость в сутки (Р):</legend>   
+             <div class="price-controls">
+        		<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        		<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      		 </div>
+             <div class="range-controls">
+       	 		<div class="scale">
+          			<div class="bar"></div>
+        		</div>
+        	<div class="range-toggle range-toggle-min"></div>
+        	<div class="range-toggle range-toggle-max"></div>
+      		</div>
+             <button class="btn-transparent" type="submit" name="show" value="show">Показать </button>
           </fieldset>
         </div>
       </form>  
