@@ -27,16 +27,32 @@
       <form action="https://echo.htmlacademy.ru" method="get">
         <div class="box1-inner container">
           <fieldset>
-             <legend>Инфраструктура</legend>   
-             <label><input type="checkbox" name="filter-infrastructure-pool" value="filter-infrastructure-pool" checked> Бассейн </label>
-             <label><input type="checkbox" name="filter-infrastructure-parking" value="filter-infrastructure-parking"> Парковка </label>
-             <label><input type="checkbox" name="filter-infrastructure-wi-fi" value="filter-infrastructure-wi-fi"> WI-FI </label>
+             <legend>Инфраструктура</legend>
+               <ul> 
+                 <li class="filter-option">  
+             	   <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-infrastructure-pool" value="filter-infrastructure-pool" checked> Бассейн </label>
+             	 </li>  
+                 <li class="filter-option">  
+                   <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-infrastructure-parking" value="filter-infrastructure-parking"> Парковка </label>
+                 </li>
+                 <li class="filter-option">  
+                   <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-infrastructure-wi-fi" value="filter-infrastructure-wi-fi" id="filter-wi-fi"> WI-FI </label>
+                 </li>  
+               </ul>  
           </fieldset>
           <fieldset>
-             <legend>Тип жилья:</legend>   
-             <label><input type="checkbox" name="type-accommodation-hotel" value="type-accommodation-hotel" checked> Гостиница </label>
-             <label><input type="checkbox" name="type-accommodation-motel" value="type-accommodation-motel" checked> Мотель </label>
-             <label><input type="checkbox" name="type-accommodation-apartments" value="type-accommodation-apartments" checked> Апартаменты </label>
+             <legend>Тип жилья:</legend> 
+               <ul>  
+                 <li class="filter-option">
+                   <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="type-accommodation-hotel" value="type-accommodation-hotel" checked> Гостиница </label>
+                 </li>  
+                 <li class="filter-option">
+                   <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="type-accommodation-motel" value="type-accommodation-motel" checked> Мотель </label>
+                 </li> 
+                 <li class="filter-option"> 
+                   <label><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="type-accommodation-apartments" value="type-accommodation-apartments" checked> Апартаменты </label>
+                 </li>
+               </ul>    
           </fieldset>
           <fieldset>
              <legend class="filter-range">Стоимость в сутки (Р):</legend>   
