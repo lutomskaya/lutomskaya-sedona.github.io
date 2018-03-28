@@ -107,7 +107,7 @@
             <div class="form-row">
               <label for="arrival">Дата заезда:</label>
               <div class="form-input-wrp">
-                <input type="text" name="booking-arrival" value="24 апреля 2017" id="arrival">
+                <input class="form-input-text" type="text" name="booking-arrival" value="24 апреля 2017" id="arrival">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" class="form-cal">
               <g id="calendar_1_">
                 <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
@@ -133,7 +133,7 @@
             <div class="form-row">
               <label for="departure">Дата выезда:</label>
               <div class="form-input-wrp">
-                <input type="text" name="booking-departure" value="4 июля 2017" id="departure">
+                <input class="form-input-text" type="text" name="booking-departure" value="4 июля 2017" id="departure">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" class="form-cal">
               <g id="calendar_1_">
                 <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
@@ -160,17 +160,17 @@
               <div class="form-half-row">
                 <label for="adults">Взрослые:</label>
                 <div class="number-btn">
-                  <button class="button-down button-form-number"></button>
-                  <input type="number" name="booking-adults" value="2" id="adults">
-                  <button class="button-up button-form-number"></button>
+                  <button type="button" class="button-down button-form-number"></button>
+                  <input class="form-input-number" type="text" name="booking-adults" value="2" id="adults">
+                  <button type="button" class="button-up button-form-number"></button>
                 </div>
               </div>
               <div class="form-half-row">
                 <label for="kids">Дети:</label>
                 <div class="number-btn">
-                  <button class="button-down button-form-number"></button>
-                  <input type="number" name="booking-kids" value="0" id="kids">
-                  <button class="button-up button-form-number"></button>
+                  <button type="button" class="button-down button-form-number"></button>
+                  <input class="form-input-number" type="text" name="booking-kids" value="0" id="kids">
+                  <button type="button" class="button-up button-form-number"></button>
                 </div>
               </div>
             </div>
@@ -185,6 +185,10 @@
       <div class="map-inner">
 
         <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+        <div class="map-search">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d104746.67864982782!2d-111.83462110150349!3d34.872965667341276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwIFNlZG9uYQ!3m2!1d34.8697395!2d-111.7609896!5e0!3m2!1sru!2sru!4v1522249408955"
+            width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
   </main>

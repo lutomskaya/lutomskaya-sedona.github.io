@@ -391,7 +391,7 @@ button {
   margin-left: 52px;
 }
 
-.interest-form input[type="text"], .interest-form input[type="number"] {
+.interest-form input[type="text"] {
   position: relative;
   box-sizing: border-box;
   padding-left: 15px;
@@ -402,8 +402,9 @@ button {
   height: 40px;
 }
 
-.interest-form input[type="number"] {
+.form-input-number {
   text-align: center;
+  padding: 0 14px;
 }
 
 .interest a:hover, .interest a:focus {
@@ -451,13 +452,42 @@ button {
   position: relative;
 }
 
+.button-form-number {
+  z-index: 2;
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+  width: 20px;
+}
+
 .button-up {
   position: absolute;
   width: 20px;
   height: 100%;
-  top: 0;
-  right: 0;
+  top: -2px;
+  right: 7px;
   border: none;
+  outline: none;
+}
+
+.button-down {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  top: -2px;
+  left: 9px;
+  border: none;
+  outline: none;
+}
+
+.button-down::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  background-color: #a9a9a9;
 }
 
 .button-up::before {
@@ -465,7 +495,7 @@ button {
   width: 10px;
   height: 2px;
   position: absolute;
-  left: 50%;
+  right: 5px;
   top: 50%;
   background-color: #a9a9a9;
   z-index: 2;
@@ -476,31 +506,10 @@ button {
   width: 10px;
   height: 2px;
   position: absolute;
-  left: 50%;
+  right: 5px;
   top: 50%;
   background-color: #a9a9a9;
   transform: rotate(90deg);
-  z-index: 2;
-}
-
-.button-down {
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border: none;
-}
-
-.button-down::before {
-  content: "";
-  width: 10px;
-  height: 2px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background-color: #a9a9a9;
-  z-index: 2;
 }
 
 .button-form-number:hover::before, .button-form-number:hover::after, .button-form-number:focus::before, .button-form-number:focus::after {
@@ -550,21 +559,29 @@ button {
 
 .interest input:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
 }
 
-.interest button:hover, .interest button:focus {
+.interest button-primary:hover, .interest button-primary:focus {
   color: #ffffff;
   background-color: #669ec0;
 }
 
-.interest button:active {
+.interest button-primary:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
 .map-inner {
   position: relative;
+}
+
+.map-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*Главная*/
@@ -629,8 +646,8 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
   padding-left: 40px;
 }
 
-.filter-option ul:nth-child(1) {
-  padding-bottom: 5px;
+.filter-option li {
+  padding-bottom: 10px;
 }
 
 .filter-option label {
@@ -917,16 +934,15 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
 
 .main-footer {
   margin: 0 auto;
-  position: absolute;
-  bottom: 130px;
-  left: auto;
-  z-index: 4;
-  opacity: 0.9;
 }
 
 .main-footer.footer-relative {
   position: relative;
-  margin-top: 1px;
+  margin-top: -128px;
+}
+
+.footer-relative .main-footer-inner {
+  background-color: rgba(299, 299, 299, 0.8);
 }
 
 .main-footer-inner {
