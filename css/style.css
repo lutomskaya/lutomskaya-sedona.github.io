@@ -61,7 +61,7 @@ button {
 }
 
 .main-navigation ul {
-  min-height: 27px;
+  min-height: 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -188,11 +188,13 @@ button {
 
 .feature-item-image {
   overflow: hidden;
+  display: flex;
 }
 
 .feature-item-image img {
-  height: 100%;
+  max-height: 100%;
   width: auto;
+  margin: auto 0;
 }
 
 .feature-item_blue-title {
@@ -342,7 +344,7 @@ button {
 .form-container {
   width: 570px;
   position: absolute;
-  top: 201px;
+  bottom: 0;
   left: auto;
   background-color: #ffffff;
   z-index: 1;
@@ -532,7 +534,7 @@ button {
 
 .button-primary {
   display: block;
-  width: 110px;
+  min-width: 110px;
   height: 25px;
   padding-top: 5px;
   color: #ffffff;
@@ -594,14 +596,13 @@ button {
   display: flex;
   min-height: 155px;
   margin-bottom: 0;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
   font-weight: normal;
   color: #ffffff;
   background-image: url("../img/filter background.png");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
-  /*filter: blur();*/
 }
 
 .box1-inner fieldset:nth-child(1) {
@@ -622,13 +623,13 @@ button {
 .box1-inner fieldset {
   display: flex;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 25px;
   border: none;
 }
 
-.box1-inner legend {
+.filter-title {
   font-size: 16px;
-  font-weight: bold,
+  font-weight: bold;
 }
 
 fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
@@ -642,12 +643,8 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
 }
 
 .filter-option {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   padding-left: 40px;
-}
-
-.filter-option li {
-  padding-bottom: 10px;
 }
 
 .filter-option label {
@@ -673,6 +670,16 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
   background-image: url(../img/checkbox-on.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+.filter-input[type=checkbox]:focus~label::before, .filter-input[type=checkbox]:hover~label::before {
+  background-image: url(../img/checkbox-on.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filter-input[type=checkbox]:disabled~label::before {
+  background-image: url(../img/checkbox-on-disabled.png);
 }
 
 .filter-range {
@@ -710,7 +717,7 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
 
 .price-controls .min-price, .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 61px;
 }
 
 .price-controls input {
@@ -787,9 +794,10 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 80px;
+  min-height: 83px;
   font-size: 21px;
   line-height: 26px;
+  padding-right: 72px;
 }
 
 .box2-inner p {
@@ -804,14 +812,22 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
 .sort-inner {
   display: flex;
   justify-content: space-between;
-  width: 380px;
+  align-items: center;
+  width: 363px;
   margin-right: auto;
   padding-left: 50px;
 }
 
+.link.sort {
+  color: #81b3d2;
+  text-decoration: none;
+  padding-left: 22px;
+}
+
 .box2-inner a {
-  text-decoration: underline;
+  border-bottom: 1px dashed #81b3d2;
   color: rgba(40, 40, 40, 0.3);
+  padding: 10px;
 }
 
 .box2-inner a:hover, .box2-inner a:focus {
@@ -831,8 +847,21 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 150px;
+  min-height: 107px;
+  padding: 19px 71px;
   border-bottom: 1px solid rgba(40, 40, 40, 0.3);
+}
+
+.hotel-inner a {
+  color: #000000;
+}
+
+.hotel-inner a:hover, .hotel-inner a:focus {
+  color: #a8c9df;
+}
+
+.hotel-inner a:active {
+  color: #cacaca;
 }
 
 .hotel-item:first-child {
@@ -841,69 +870,62 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
 
 .hotel-text {
   margin-right: auto;
-  margin-left: 35px;
+  margin-left: 33px;
   text-align: left;
   font-weight: normal;
   color: #333333;
 }
 
 .hotel-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .hotel-title {
   margin: 0;
+  max-width: 500px;
   font-size: 21px;
   line-height: 26px;
+  padding-top: 7px;
 }
 
 .hotel-row {
   display: flex;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
+  padding-top: 8px;
 }
 
 .hotel-half+.hotel-half {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .rating {
   position: relative;
 }
 
-/*
-.rating::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 65px;
-  width: 22px;
-  height: 22px;
-  background-image: url(../img/star.svg);
-  background-position: center;
-  background-repeat: repeat-x;
-}
-*/
-
 .rating p {
-  margin-right: 75px;
-  margin-top: 68px;
-  padding: 5px;
   font-weight: normal;
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.star {
+  padding-left: 0;
+  min-width: 90px;
+  padding-bottom: 20px;
 }
 
 .hotel-jpg {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 70px;
 }
 
 .button-secondary {
   display: block;
-  width: 140px;
+  min-width: 140px;
   height: 25px;
   padding-top: 5px;
   color: #ffffff;
