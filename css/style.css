@@ -41,7 +41,7 @@ button {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2), 0px -5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 /* Header */
@@ -51,6 +51,7 @@ button {
   position: relative;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .main-header-logo {
@@ -100,16 +101,6 @@ button {
 
 /* slogan и картинка*/
 
-/*
-.picture {
-  background-color: #ffffff;
-  background-image: url("../img/white.png"), url("../img/fon.jpg");
-  background-position: bottom;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-*/
-
 .picture {
   background-image: url(../img/main-bg.jpg);
   background-size: 100%;
@@ -135,10 +126,11 @@ button {
 
 .slogan-inner {
   width: 100%;
-  min-height: 100px;
+  min-height: 150px;
   text-align: center;
-  margin-top: 53px;
-  margin-bottom: 50px;
+  padding-top: 37px;
+  padding-bottom: 22px;
+  background-color: #ffffff;
 }
 
 .slogan-title {
@@ -186,6 +178,10 @@ button {
   padding-right: 45px;
 }
 
+.feature-item-block p:nth-child(2) {
+  padding-bottom: 6px;
+}
+
 .feature-item-image {
   overflow: hidden;
 }
@@ -226,13 +222,13 @@ button {
 
 .feature-item:nth-child(2) {
   background-image: url(../img/icon-1.svg);
-  background-position: 160px 60px;
+  background-position: 162px 58px;
   background-repeat: no-repeat;
 }
 
 .feature-item:nth-child(3) {
   background-image: url(../img/icon-2.svg);
-  background-position: 160px 60px;
+  background-position: 160px 58px;
   background-repeat: no-repeat;
 }
 
@@ -245,7 +241,6 @@ button {
 .aspect-item {
   width: 400px;
   min-height: 250px;
-  margin-bottom: 25px;
   background-color: #eeeeee;
 }
 
@@ -286,15 +281,23 @@ button {
 
 .interest-inner {
   width: 100%;
+  min-height: 266px;
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  background-color: #ffffff;
+  padding-top: 25px;
 }
 
 .interest a {
   display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  z-index: 3;
   width: 570px;
   min-height: 60px;
   padding-top: 30px;
@@ -309,27 +312,34 @@ button {
   display: none;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-left: 4px;
+  padding-top: 54px;
+  padding-left: 57px;
+  padding-bottom: 50px;
+}
+
+.form-container {
+  width: 570px;
+  position: absolute;
+  top: 201px;
+  left: auto;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
 .modal-show {
   display: flex;
-  animation: bounce 0.6s;
+  animation: falling 1s;
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(-50%, -400px);
   }
-  70% {
-    transform: translateY(30px);
-  }
-  90% {
-    transform: translateY(-10px);
+  80% {
+    transform: translate(-50%, 50px);
   }
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0px);
   }
 }
 
@@ -343,7 +353,7 @@ button {
 }
 
 .form-row:nth-child(2) {
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 }
 
 .form-half-row {
@@ -397,21 +407,6 @@ button {
   position: relative;
   width: 100%;
 }
-
-/*
-.form-input-wrp::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 10px;
-  width: 27px;
-  height: 100%;
-  background-image: url(../img/calendar.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-}
-*/
 
 .form-cal {
   position: absolute;
@@ -517,7 +512,6 @@ button {
   line-height: 26px;
   width: 460px;
   height: 60px;
-  margin-bottom: 60px;
 }
 
 .interest input {
@@ -544,6 +538,10 @@ button {
 .interest button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+}
+
+.map-inner {
+  position: relative;
 }
 
 /*Главная*/
@@ -891,13 +889,52 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
 /*Отели*/
 
 .main-footer {
-  display: flex;
   margin: 0 auto;
-  padding-top: 20px;
+  position: absolute;
+  bottom: 130px;
+  left: auto;
+  z-index: 4;
+  opacity: 0.9;
+}
+
+.main-footer.footer-relative {
+  position: relative;
+  margin-top: 1px;
 }
 
 .main-footer-inner {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.main-footer-column {
+  width: 400px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.main-footer-column .hashtag {
+  margin: 0;
+  padding: 0;
+  padding-top: 49px;
+  margin-bottom: 53px;
+  padding-left: 6px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
 }
 
 .main-footer p {
@@ -906,29 +943,11 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
   font-weight: normal;
 }
 
-.link-inner {
-  width: 240px;
-  padding-left: 132px;
-}
-
 .link-inner p {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-}
-
-.visit {
-  margin: 0;
-}
-
-.footer-social {
-  width: 200px;
-  padding-left: 105px;
-}
-
-.footer-social ul {
-  display: flex;
-  list-style: none;
+  margin: auto;
 }
 
 .footer-social a {
@@ -955,8 +974,6 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
 .footer-copyright {
   display: flex;
   align-content: center;
-  width: 240px;
-  padding-left: 230px;
 }
 
 .footer-copyright a {
