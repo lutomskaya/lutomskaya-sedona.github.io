@@ -8,7 +8,7 @@ body {
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -41,13 +41,14 @@ button {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.2), -5px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2), 0px -5px 15px rgba(0, 1, 1, 0.2);
 }
 
 /* Header */
 
-.main-header {
+.main-header-inner {
   width: 100%;
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -64,7 +65,7 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 17px 0;
-  margin: 0 73px;
+  margin: 0 72px;
   list-style: none;
 }
 
@@ -99,6 +100,7 @@ button {
 
 /* slogan и картинка*/
 
+/*
 .picture {
   background-color: #ffffff;
   background-image: url("../img/white.png"), url("../img/fon.jpg");
@@ -106,12 +108,25 @@ button {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+*/
+
+.picture {
+  background-image: url(../img/main-bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #a1b3c0;
+  background-position: 30% 23%;
+}
 
 .picture-inner {
   min-height: 510px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  background-image: url(../img/index-white-broken-line.png);
+  background-position: 0 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .picture-inner img {
@@ -155,6 +170,8 @@ button {
   width: 100%;
   min-height: 256px;
   display: flex;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .feature-item:nth-child(5) {
@@ -178,15 +195,11 @@ button {
   width: auto;
 }
 
-.feature-item_blue {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
 .feature-item_blue-title {
   font-size: 21px;
   padding-left: 70px;
   padding-right: 70px;
+  padding-bottom: 3px;
 }
 
 .feature-item_blue p {
@@ -309,21 +322,16 @@ button {
   0% {
     transform: translateY(-2000px);
   }
-
   70% {
     transform: translateY(30px);
   }
-
   90% {
     transform: translateY(-10px);
   }
-
   100% {
     transform: translateY(0);
   }
 }
-
-
 
 .form-row {
   width: 100%;
@@ -882,10 +890,14 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
 
 /*Отели*/
 
-.main-footer .container {
+.main-footer {
   display: flex;
   margin: 0 auto;
   padding-top: 20px;
+}
+
+.main-footer-inner {
+  display: flex;
 }
 
 .main-footer p {
@@ -903,6 +915,10 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+}
+
+.visit {
+  margin: 0;
 }
 
 .footer-social {

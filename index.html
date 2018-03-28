@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="main-header-inner container">
+  <header class="main-header container">
+    <div class="main-header-inner">
       <a class="main-header-logo">
   		     <img src="img/logo.png" width="138" height="70" alt="Логотип">
 		</a>
@@ -25,23 +25,23 @@
       </nav>
     </div>
   </header>
-  <main class="holder">
-    <div class="container">
-      <section class="picture">
-        <div class="picture-inner">
-          <h1 class="visually-hidden">SEDONA</h1>
-          <img src="img/Welcome.png" width="458" height="352" alt="welcome">
-        </div>
-      </section>
-      <section class="slogan">
-        <div class="slogan-inner">
-          <h2 class="slogan-title">Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
-      </section>
-    </div>
+  <main class="holder container">
+
+    <section class="picture">
+      <div class="picture-inner">
+        <h1 class="visually-hidden">SEDONA</h1>
+        <img src="img/Welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona,because the grand canyon sucks">
+      </div>
+    </section>
+    <section class="slogan">
+      <div class="slogan-inner">
+        <h2 class="slogan-title">Седона &mdash; небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+    </section>
+
     <section class="features">
-      <div class="features-inner container">
+      <div class="features-inner">
         <h1 class="visually-hidden">Преимущества</h1>
         <ul class="features-list">
           <li class="feature-item feature-item_blue">
@@ -95,7 +95,7 @@
       </div>
     </section>
     <section class="interest">
-      <div class="interest-inner container">
+      <div class="interest-inner">
         <div class="interest-caption">
           <h2 class="interest-title">Заинтересовались?</h2>
           <p class="interest-text">Укажите предпологаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -180,16 +180,16 @@
     <section class="map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
 
-      <div class="map-inner container">
-        
+      <div class="map-inner">
+
         <img src="img/map.jpg" width="1200" height="593" alt="Карта">
       </div>
     </section>
   </main>
-  <footer class="main-footer">
-    <div class="main-footer-inner container">
+  <footer class="main-footer container">
+    <div class="main-footer-inner">
       <div class="link-inner">
-        <p>#VISITSEDONA</p>
+        <p class="visit">#VISITSEDONA</p>
       </div>
       <div class="footer-social">
         <ul>
@@ -222,17 +222,17 @@
       </p>
     </div>
   </footer>
-<script>
-  var link = document.querySelector(".link-search");
-  var popup = document.querySelector(".interest-form");
+  <script>
+    var link = document.querySelector(".link-search");
+    var popup = document.querySelector(".interest-form");
 
 
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.toggle("modal-show");
+    link.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.toggle("modal-show");
 
-  });
-</script>
+    });
+  </script>
 </body>
 
 </html>
