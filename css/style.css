@@ -87,6 +87,10 @@ button {
   color: #000000;
 }
 
+.link.active {
+  color: #766357;
+}
+
 .site-navigation a:hover, .site-navigation a:focus {
   color: #81b3d2;
 }
@@ -307,6 +311,7 @@ button {
   background-color: #766357;
 }
 
+/*
 .interest-form {
   width: 460px;
   display: none;
@@ -315,6 +320,23 @@ button {
   padding-top: 54px;
   padding-left: 57px;
   padding-bottom: 50px;
+}
+*/
+
+.interest-form {
+  width: 100%;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 54px;
+  padding-left: 57px;
+  padding-bottom: 50px;
+  padding-right: 57px;
+  position: absolute;
+  top: auto;
+  left: 0;
+  background-color: white;
+  box-sizing: border-box;
 }
 
 .form-container {
@@ -328,19 +350,20 @@ button {
 
 .modal-show {
   display: flex;
-  animation: falling 1s;
 }
 
-@keyframes bounce {
+@keyframes opacity {
   0% {
-    transform: translate(-50%, -400px);
-  }
-  80% {
-    transform: translate(-50%, 50px);
+    transform: translateY(0);
   }
   100% {
-    transform: translate(-50%, 0px);
+    transform: translateY(50px);
+    background-color: rgba(255, 255, 255, 0.9);
   }
+}
+
+.form-animation {
+  animation: opacity .3s;
 }
 
 .form-row {
@@ -566,12 +589,12 @@ button {
 
 .box1-inner fieldset:nth-child(1) {
   width: 240px;
-  padding-left: 75px;
+  padding-left: 70px;
 }
 
 .box1-inner fieldset:nth-child(2) {
   width: 500px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .box1-inner fieldset:nth-child(3) {
@@ -592,7 +615,7 @@ button {
 }
 
 fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
-  padding-bottom: 30px;
+  padding-bottom: 27px;
 }
 
 .box1-inner ul {
@@ -603,7 +626,11 @@ fieldset:nth-child(1) legend, fieldset:nth-child(2) legend {
 
 .filter-option {
   margin-bottom: 20px;
-  padding-left: 50px;
+  padding-left: 40px;
+}
+
+.filter-option ul:nth-child(1) {
+  padding-bottom: 5px;
 }
 
 .filter-option label {
