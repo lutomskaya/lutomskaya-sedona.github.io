@@ -1,0 +1,1 @@
+var link=document.querySelector(".link-search"),popup=document.querySelector(".interest-form");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.toggle("modal-show")});

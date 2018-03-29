@@ -48,6 +48,10 @@ input[type="radio"].visually-hidden {
           box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
+main {
+  display: block;
+}
+
 .main-header-inner {
   width: 100%;
   position: relative;
@@ -363,9 +367,10 @@ input[type="radio"].visually-hidden {
   width: 570px;
   position: absolute;
   bottom: 0;
-  left: auto;
+  left: 50%;
   z-index: 1;
   background-color: #ffffff;
+  margin-left: -285px;
 }
 
 .modal-show {
@@ -676,7 +681,7 @@ input[type="radio"].visually-hidden {
 .box1-inner fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: block;
   padding: 0;
   margin-top: 25px;
   border: none;
@@ -787,6 +792,7 @@ fieldset:nth-child(2) legend {
 
 .price-controls input {
   width: 50px;
+  min-height: 35px;
   margin: 0;
   color: inherit;
   font: inherit;
@@ -1172,7 +1178,7 @@ a .hotel-title:active {
 .footer-social a:hover, 
 .footer-social a:focus {
   color: #ffffff;
-  background-color: #669ec0;
+  background-color: #669ec0;  
 }
 
 .social-button:active path {
@@ -1195,10 +1201,11 @@ a .hotel-title:active {
 .footer-copyright a:hover, 
 .footer-copyright a:focus {
   color: #81b3d2;
+  
 }
 
 .footer-copyright a:active {
-  color: rgba(40, 40, 40, 0.3);
+  color: rgba(40, 40, 40, 0.3); 
 }
 
 .logo:hover path, .logo:focus path {
