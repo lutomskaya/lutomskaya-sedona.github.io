@@ -1,4 +1,2 @@
-<a href="https://lutomskaya.github.io/lutomskaya-sedona.github.io/">Личный проект «Седона»</a>
+<a href="https://lutomskaya.github.io/sedona//">«Седона»</a>
 
-* Студент: [Анна Лютомская](https://up.htmlacademy.ru/htmlcss/20/user/363451).
-* Наставник: [Наталья Майстренко] (https://htmlacademy.ru/profile/natalie).
